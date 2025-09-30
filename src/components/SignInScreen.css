@@ -1,0 +1,116 @@
+.sign-in-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a0b2e 0%, #2d1b3d 50%, #1a0b2e 100%);
+  padding: 2rem;
+}
+
+.sign-in-container {
+  max-width: 500px;
+  width: 100%;
+  background: rgba(30, 15, 45, 0.8);
+  border: 2px solid #6b21a8;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(107, 33, 168, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.spooky-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.spooky-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+}
+
+.spooky-subtitle {
+  color: #c084fc;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.sign-in-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sign-in-message {
+  text-align: center;
+  color: #e9d5ff;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
+}
+
+.sign-in-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(124, 58, 237, 0.6);
+  background: linear-gradient(135deg, #8b5cf6 0%, #c084fc 100%);
+}
+
+.sign-in-button:active {
+  transform: translateY(0);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #e9d5ff;
+  font-size: 0.95rem;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .sign-in-container {
+    padding: 2rem;
+  }
+
+  .spooky-title {
+    font-size: 2rem;
+  }
+
+  .spooky-subtitle {
+    font-size: 1rem;
+  }
+}
